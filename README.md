@@ -5,7 +5,7 @@ We will try to adopt object-oriented CSS methodology in this draft.
 
 High-Level Principle
 --------------------
-#### Good CSS Architecture [1]
+### Good CSS Architecture [1]
 - Predictable 
 - Reusable 
 - Maintainable 
@@ -31,11 +31,43 @@ BEM - meaning blocks, elements and modifiers - is a front-end naming methodologi
 allows you maintaining your project with more flexibility and mantainability in a schematic manner.
 
 #### Blocks
+A block was a part of a page design or layout whose specific and unique meaning was defined either semantically or visually [8]. Block is a visual and functional component of the interface. It is reusable and should be independently existed.
 
-#### Elements
+For example, Menu Block, Logo Block, Search Block, Auth Block.
 
-#### Modifiers
+<img src="images/blocks-example.png" alt="Blocks example" style="width: 200px;"/>
 
+##### Naming Rule
+Naming of blocks is quite simple. As long as the block is self-explaining. Single dash (-) is allowed if needed. 
+
+- ```.button```
+- ```.text-field```
+- ```.flyout```
+- ```.heading```
+- ```.menu```
+
+Or with prefix, ```b-``` for block, ```c-``` or ```j-``` for js block and ```g-``` for global etc.. Prefix is optional.
+- ```.b-button```
+- ```.b-text-field```
+- ```.b-flyout```
+- ```.b-heading```
+- ```.b-menu```
+
+HTML Example:
+```html
+<ul class="menu">
+  <li>
+    <a href="#">foo</a>
+  </li>
+  <li>...</li>
+</ul>  
+```
+
+##### Elements
+
+##### Modifiers
+
+#### Naming Rules
 
  
 Credits
@@ -56,3 +88,4 @@ Credits
 [5]: https://github.com/bjankord/CSS-Components-Modifiers-And-Subcomponents-Collection
 [6]: http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
 [7]: http://www.slideshare.net/VarvaraStepanova/bem-it-introduction-to-bem-methodology
+[8]: http://www.smashingmagazine.com/2013/02/21/the-history-of-the-bem-methodology/
